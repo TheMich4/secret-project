@@ -1,0 +1,65 @@
+.Game {
+  width: 100%;
+  display: flex;
+  border: 1px solid #000000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 2px;
+  min-height: 100px;
+  margin-top: 5px;
+  flex-direction: row;
+  padding-left: 5px;
+  justify-content: space-between;
+}
+
+.Game-win {
+  border-left: 5px solid green;
+}
+
+.Game-loss {
+  border-left: 5px solid red;
+}
+
+.Game:first-child {
+  margin-top: 0;
+}
+
+.Game-SummonnerSpells {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: space-evenly;
+}
+
+.Game-ChampionInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.Game-Stats {
+  font-size: 25px;
+  display: flex;
+  align-self: center;
+}
+
+.ChampionsList,
+.ItemsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ChampionsList-Team,
+.ItemsList-Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ChampionList-Champion {
+  margin: 1px;
+}
+
+.ChampionList-Champion--current {
+  border-radius: 100%;
+  border: 2px solid #451abc;
+}

@@ -3,8 +3,10 @@
 import './style.css';
 
 import { Card } from '../../common';
+import GameHistory from './GameHistory';
+import OptionsBar from './OptionsBar';
 import ProfileIcon from './ProfileIcon';
-import RankInfo from './Rank';
+import RankInfo from './RankInfo';
 import React from 'react';
 
 type Props = {
@@ -34,6 +36,10 @@ const UserProfile = ({
           <RankInfo rank="gold" size="80" />
         </div>
       </Card>
+
+      <OptionsBar />
+
+      <GameHistory />
     </div>
   );
 };

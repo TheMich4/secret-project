@@ -12,7 +12,7 @@ type Props = {
 const ProfileIcon = ({ id, size }: Props) => {
   const profileIcon = `http://ddragon.leagueoflegends.com/cdn/10.6.1/img/profileicon/${id}.png`;
 
-  return <img className="UserProfile-Icon" height={size} src={profileIcon} width={size} />;
+  return <img alt="" className="UserProfile-Icon" height={size} src={profileIcon} width={size} />;
 };
 
 export default ProfileIcon;

@@ -2,17 +2,20 @@
 
 import './style.css';
 
+import {
+  bronze,
+  challenger,
+  diamond,
+  gold,
+  grandmaster,
+  iron,
+  master,
+  platinum,
+  silver,
+} from './rankIcons';
+
 import type { Rank } from './types';
 import React from 'react';
-import bronze from '../../assets/RankEmblems/Emblem_Bronze.png';
-import challenger from '../../assets/RankEmblems/Emblem_Challenger.png';
-import diamond from '../../assets/RankEmblems/Emblem_Diamond.png';
-import gold from '../../assets/RankEmblems/Emblem_Gold.png';
-import grandmaster from '../../assets/RankEmblems/Emblem_Grandmaster.png';
-import iron from '../../assets/RankEmblems/Emblem_Iron.png';
-import master from '../../assets/RankEmblems/Emblem_Master.png';
-import platinum from '../../assets/RankEmblems/Emblem_Platinum.png';
-import silver from '../../assets/RankEmblems/Emblem_Silver.png';
 
 type Props = {
   size: string,
@@ -47,7 +50,7 @@ const RankInfo = ({ size, rank }: Props) => {
 
   return (
     <div className="UserProfile-Rank">
-      <img height={size} src={rankIcon} width={size}></img>
+      <img alt="" height={size} src={rankIcon} width={size}></img>
     </div>
   );
 };

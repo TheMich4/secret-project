@@ -21,10 +21,10 @@ body > div,
 ::-moz-selection {
   /* Code for Firefox */
   color: #ffffff;
-  background: #bf24fb;
+  background: #451abc;
 }
 
 ::selection {
   color: #ffffff;
-  background: #bf24fb;
+  background: #451abc;
 }
