@@ -1,0 +1,31 @@
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserProfile-Icon {
+  border: 2px solid #000000;
+}
+
+.UserProfile-Details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: start;
+}
+
+.UserProfile-Name {
+  font-size: 20px;
+}
+
+.UserProfile-Level {
+  font-size: 10px;
+  color: #dddddd;
+}
+
+.UserProfile-Ranks {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
