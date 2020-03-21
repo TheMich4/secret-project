@@ -1,0 +1,112 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "react", "flowtype"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "prettier/react", "plugin:import/errors"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },  
+  "rules": {
+    "flowtype/require-valid-file-annotation": [
+      "warn",
+      "always"
+    ],
+    "import/no-unresolved": ["warn"],
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": false }],
+    "react/destructuring-assignment": [0, "always"],
+    "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
+    "capitalized-comments": "off",
+    "class-methods-use-this": "off",
+    "comma-dangle": ["warn", "always-multiline"],
+    "consistent-this": ["error", "self"],
+    "dot-location": ["error", "property"],
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "global-require": "off",
+    "id-length": "off",
+    "import/no-duplicates": "warn",
+    "jsx-quotes": ["error", "prefer-double"],
+    "line-comment-position": "off",
+    "lines-around-directive": ["error", "never"],
+    "max-len": ["error", { "code": 120 }],
+    "max-lines": ["warn", { "skipBlankLines": true }],
+    "max-params": ["warn", 6],
+    "max-statements": ["error", { "max": 30 }],
+    "multiline-ternary": "off",
+    "newline-before-return": "off",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+    "no-confusing-arrow": ["off"],
+    "no-console": "error",
+    "no-duplicate-imports": "off",
+    "no-inline-comments": "off",
+    "no-magic-numbers": "off",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-negated-condition": "warn",
+    "no-plusplus": "off",
+    "no-process-env": "off",
+    "no-ternary": "off",
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "no-unused-vars": "error",
+    "no-warning-comments": "warn",
+    "object-curly-spacing": ["warn", "always", { "objectsInObjects": false }],
+    "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
+    "one-var": ["error", { "var": "always", "let": "always", "const": "never" }],
+    "operator-linebreak": ["off", "after", { "overrides": { "?": "before", ":": "before" } }],
+    "padded-blocks": ["error", { "blocks": "never" }],
+    "prettier/prettier": "warn",
+    "quote-props": ["error", "as-needed"],
+    "react/forbid-component-props": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-child-element-spacing": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/jsx-handler-names": "off",
+    "react/jsx-indent-props": ["warn", 2],
+    "react/jsx-indent": ["warn", 2],
+    "react/jsx-max-depth": ["warn", { "max": 5 }],
+    "react/jsx-no-bind": ["off", { "allowArrowFunctions": true }],
+    "react/jsx-no-literals": "off",
+    "react/jsx-sort-props": [
+      "error",
+      { "callbacksLast": true, "shorthandLast": true, "ignoreCase": true }
+    ],
+    "react/jsx-wrap-multilines": "off",
+    "react/no-multi-comp": ["warn", { "ignoreStateless": true }],
+    "react/no-set-state": "off",
+    "react/prop-types": "off",
+    "react/require-optimization": "off",
+    "require-jsdoc": "off",
+    "sort-imports": "warn",
+    "sort-keys": "off",
+    "space-before-function-paren": ["error", "never"],
+    "max-depth": ["error", 5],
+    "no-nested-ternary": "off",
+    "implicit-arrow-linebreak": "off",
+    "array-bracket-newline": "off",
+    "prefer-destructuring": "off",
+    "react/sort-comp": [
+      1,
+      {
+        "order": ["type-annotations", "static-methods", "lifecycle", "everything-else", "render"]
+      }
+    ],
+    "lines-between-class-members": "off",
+    "callback-return": "off",
+    "no-case-declarations": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "off"
+  }
+}

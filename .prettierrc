@@ -1,0 +1,12 @@
+{
+  "jsxBracketSameLine": true,
+  "printWidth": 100,
+  "singleQuote": true,
+  "editor.formatOnSave": true,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "trailingComma": "all"
+}
