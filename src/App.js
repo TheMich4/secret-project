@@ -7,10 +7,8 @@ import { MainScreen, NavBar } from './displays';
 
 import { Provider } from 'react-redux';
 import React from 'react';
-import configureStore from './store';
 import logo from './logo.svg';
-
-const store = configureStore();
+import store from './store';
 
 const App = () => {
   return (
