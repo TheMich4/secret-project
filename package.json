@@ -19,7 +19,7 @@
     "eslint-plugin-react": "^7.18.3",
     "flow-bin": "^0.118.0",
     "gh-pages": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "prettier": "^1.19.1",
     "react": "^16.13.1",
     "react-app-rewire-aliases": "^0.2.0",
